@@ -1,0 +1,220 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    color: rgb(245, 245, 245);
+    background-color: #141c24;
+    background-image: linear-gradient(135deg, #0b1015 0%, #000000 100%);
+
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+
+.tab-container{
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 5px;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.tab{
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 8px 10px;
+    letter-spacing: 1.75px;
+}
+
+.tab.current-tab{
+    background-color:rgb(188, 215, 238);
+    border-radius: 4px;
+    color: #000000;
+    font-weight: bold;
+}
+.weather-container{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    margin-block: 4rem;
+}
+.btn{
+    all: unset;
+    background-color:  rgb(188, 215, 238);
+    border-radius: 7px;
+    text-transform: uppercase;
+    color: #0e0d07;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grant-location-container{
+    display: none;
+
+}
+.grant-location-container.active{
+    display: flex;
+}
+.grant-location-container img{
+    margin-bottom: 2rem;
+}
+
+.grant-location-container p:first-of-type{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.grant-location-container p:last-of-type{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.75px;
+}
+.loading-conatiner{
+    display: none;
+}
+.loading-conatiner.active{
+    display: flex;
+}
+.loading-conatiner p{
+    text-transform: uppercase;
+}
+.user-info-conatiner{
+    display: none;
+}
+.user-info-conatiner.active{
+    display: flex;
+}
+
+.user-info-conatiner img{
+    width: 100px;
+    height: 100px;
+}
+.user-info-conatiner p{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.name{
+    display: flex;
+    align-items: center;
+    margin-top: 1.6rem;
+    gap:0.5rem 0.5rem;
+    margin-bottom: 1rem;
+}
+.name p{
+    font-size: 2.23rem;
+    font-weight: 300;
+}
+.name img{
+    width: 30px;
+    height: 30px;
+}
+
+.user-info-conatiner p[data-weatherDesc]{
+    font-size: 2.2rem;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.user-info-conatiner p[data-temparature]{
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+.parameter-conatiner{
+    gap: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.parameter{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 150px;
+    background-color: rgb(96, 130, 159);
+    border-radius: 5px;
+    padding: 1rem;
+    gap: 5px 0;
+    justify-content: center;
+    align-items: center;
+}
+.parameter img{
+    width: 50px;
+    height: 50px;
+}
+.parameter p:first-of-type{
+    text-transform: uppercase;
+    font-size: 1.60rem;
+    font-weight: 550;
+}
+.parameter p:last-of-type{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.form-container{
+    display: none;
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 1rem;
+}
+.form-container.active{
+    display: flex;
+}
+.form-container input{
+    all: unset;
+    color: black;
+    font-weight: 400;
+    font: 1rem;
+    max-width: 90%;
+     width: calc(100% - 100px);
+     height: 45px;
+     padding: 0 20px;
+     border-radius: 10px;
+     background-color: rgb(188, 215, 238);
+}
+.form-container input::placeholder{
+    color: #0e0d07;
+    font-weight: 400;
+}
+.form-container button{
+    all: unset;
+    background-color:  rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid wheat;
+    align-items: center;
+    border-radius: 100%;
+}
+.error-container{
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.error-container.active{
+    display: flex;
+} 
